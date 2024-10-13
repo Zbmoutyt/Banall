@@ -1,0 +1,65 @@
+{
+  "name": "TelegramBanBot",
+  "description": "A Telegram bot to ban all members from a group using multiple bots.",
+  "repository": "https://github.com/your-username/your-repo-name",
+  "logo": "https://your-image-url.com/logo.png",
+  "env": {
+    "BOT_1_TOKEN": {
+      "description": "Bot 1 Token from Telegram BotFather",
+      "required": true
+    },
+    "BOT_2_TOKEN": {
+      "description": "Bot 2 Token from Telegram BotFather",
+      "required": true
+    },
+    "BOT_3_TOKEN": {
+      "description": "Bot 3 Token from Telegram BotFather",
+      "required": true
+    },
+    "BOT_4_TOKEN": {
+      "description": "Bot 4 Token from Telegram BotFather",
+      "required": true
+    },
+    "BOT_5_TOKEN": {
+      "description": "Bot 5 Token from Telegram BotFather",
+      "required": true
+    },
+    "BOT_6_TOKEN": {
+      "description": "Bot 6 Token from Telegram BotFather",
+      "required": true
+    },
+    "BOT_7_TOKEN": {
+      "description": "Bot 7 Token from Telegram BotFather",
+      "required": true
+    },
+    "BOT_8_TOKEN": {
+      "description": "Bot 8 Token from Telegram BotFather",
+      "required": true
+    },
+    "BOT_9_TOKEN": {
+      "description": "Bot 9 Token from Telegram BotFather",
+      "required": true
+    },
+    "BOT_10_TOKEN": {
+      "description": "Bot 10 Token from Telegram BotFather",
+      "required": true
+    },
+    "OWNER_USER_ID": {
+      "description": "Your Telegram User ID to receive notifications",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1
+    }
+  },
+  "scripts": {
+    "postdeploy": "chmod +x ban && ./ban"
+  }
+}
